@@ -3,7 +3,7 @@ import matplotlib.pyplot as pt
 from scipy.io import wavfile
 fs,x=wavfile.read("Classical.wav")
 def downsampling(fs,x):
-    factor=int(input("Enter upsampling factor"))
+    factor=int(input("Enter downsampling factor"))
     y=np.zeros(int(len(x)/factor))
     for i in range(int(len(x)/factor)):
         if(i%factor==0):
